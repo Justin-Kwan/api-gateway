@@ -1,0 +1,4 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mJsonHandlerTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should read mock json data from gateway config file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should read empty mock json data from gateway config file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should read long mock json data from gateway config file[0m[0m

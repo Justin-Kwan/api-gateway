@@ -1,0 +1,73 @@
+{
+  "pipelines": [
+
+    {
+      "name": "pipeline1",
+
+      "policies": [{
+          "name": "policy1",
+          "url": "policy1.com",
+          "protocol": "rest",
+          "method": "post",
+          "successCondition": "user authorized"
+        },
+        {
+          "name": "policy1",
+          "url": "policy1.com",
+          "protocol": "rest",
+          "method": "post",
+          "successCondition": "user authorized"
+        }
+      ],
+      "services": [{
+          "name": "route1",
+          "url": "route1.com",
+          "protocol": "rest",
+          "method": "get"
+        },
+        {
+          "name": "route1",
+          "url": "route1.com",
+          "protocol": "rest",
+          "method": "get"
+        }
+      ]
+    },
+
+    {
+      "name": "pipeline2",
+
+      "policies": [{
+          "name": "policy1",
+          "url": "policy1.com",
+          "protocol": "rest",
+          "method": "post",
+          "successCondition": "user authorized"
+        },
+        {
+          "name": "policy1",
+          "url": "policy1.com",
+          "protocol": "rest",
+          "method": "post",
+          "successCondition": "user authorized"
+        }
+      ],
+      "services": [{
+          "name": "route1",
+          "url": "route1.com",
+          "protocol": "rest",
+          "method": "get"
+        },
+        {
+          "name": "route1",
+          "url": "route1.com",
+          "protocol": "rest",
+          "method": "get"
+        }
+      ]
+    }
+
+
+  ]
+
+}

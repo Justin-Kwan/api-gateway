@@ -1,0 +1,17 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mEndpointTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msetName() / getName() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the name (an empty string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the name (a short string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the name (a long string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msetUrl() / getUrl() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the url (an empty string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the url (a short string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the url (a long string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msetProtocol() / getProtocol() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the protocol (an empty string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the protocol (a short string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the protocol (a long string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msetMethod() / getMethod() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the method (an empty string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the method (a short string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the method (a long string)[0m[0m

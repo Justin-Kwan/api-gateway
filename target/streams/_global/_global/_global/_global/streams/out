@@ -1,0 +1,252 @@
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [api-gateway / Compile / run] Found inputs: /Users/justinkwan/Desktop/api-gateway/*.{java,scala},/Users/justinkwan/Desktop/api-gateway/src/main/java/**/*.{java,scala},/Users/justinkwan/Desktop/api-gateway/src/main/resources/**/*,/Users/justinkwan/Desktop/api-gateway/src/main/scala/**/*.{java,scala},/Users/justinkwan/Desktop/api-gateway/src/main/scala-2.13/**/*.{java,scala}[0m
+[0m[[0m[0minfo[0m] [0m[0m1. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala (previous stamp: Hash(e0a6df8176a02e8e2a90d7de3882b70e9fb36c2e), current stamp: Hash(4cd8531f95c3439e364704a71ecb2bedd183417f))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala -> Trigger. Returning: (Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala, 2020-Apr.-14 04:16:03.038 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala, 2020-Apr.-14 04:16:03.038 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m2. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala -> Trigger. Returning: (Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala, 2020-Apr.-14 15:22:58.824 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala, 2020-Apr.-14 15:22:58.824 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m3. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala -> Trigger. Returning: (Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala, 2020-Apr.-14 15:22:58.807 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala, 2020-Apr.-14 15:22:58.807 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m4. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala -> Trigger. Returning: (Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala, 2020-Apr.-14 15:23:12.322 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala, 2020-Apr.-14 15:23:12.322 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m5. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala -> Trigger. Returning: (Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala, 2020-Apr.-14 15:23:12.321 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/services/PipelineFactory.scala, 2020-Apr.-14 15:23:12.321 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m6. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala (previous stamp: Hash(722b6022a7cc94e12c13c45970f99d156047b05c), current stamp: Hash(aede1f059926e557fd410e512c1a3bd278fc4a62))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala -> Trigger. Returning: (Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala, 2020-Apr.-14 19:00:34.573 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala, 2020-Apr.-14 19:00:34.573 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m7. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mDropping event for unmodified path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala (previous stamp: Hash(aede1f059926e557fd410e512c1a3bd278fc4a62), current stamp: Hash(db7f1241a4a147dc13ebfeca8725e377f5a0f378))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala -> Trigger. Returning: (Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala, 2020-Apr.-14 19:01:32.813 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala, 2020-Apr.-14 19:01:32.813 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m8. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala -> Trigger. Returning: (Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala, 2020-Apr.-14 19:01:52.461 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala, 2020-Apr.-14 19:01:52.461 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m9. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m   Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala (previous stamp: Hash(da39a3ee5e6b4b0d3255bfef95601890afd80709), current stamp: Hash(f45ad28decc3cc0bde2dd12b3b3c21f6dff4a883))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala -> Trigger. Returning: (Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala, 2020-Apr.-14 19:01:59.190 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala, 2020-Apr.-14 19:01:59.190 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m10. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala (previous stamp: Hash(db7f1241a4a147dc13ebfeca8725e377f5a0f378), current stamp: Hash(fbeaf6b62c50f8574372bdeb0e83639510716fa9))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala -> Trigger. Returning: (Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala, 2020-Apr.-14 19:02:00.637 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Request.scala, 2020-Apr.-14 19:02:00.637 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m11. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Pipeline.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Pipeline.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Pipeline.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Pipeline.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Pipeline.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Pipeline.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Pipeline.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Pipeline.scala -> Trigger. Returning: (Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Pipeline.scala, 2020-Apr.-14 19:02:21.564 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Pipeline.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Pipeline.scala, 2020-Apr.-14 19:02:21.564 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m12. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Pipeline.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Pipeline.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Pipeline.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Pipeline.scala -> Trigger. Returning: (Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Pipeline.scala, 2020-Apr.-14 19:02:21.563 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Pipeline.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Pipeline.scala, 2020-Apr.-14 19:02:21.563 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m13. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/PipelineFactory.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/PipelineFactory.scala -> Trigger. Returning: (Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/PipelineFactory.scala, 2020-Apr.-14 19:02:23.263 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/PipelineFactory.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/PipelineFactory.scala, 2020-Apr.-14 19:02:23.263 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m14. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala -> Trigger. Returning: (Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala, 2020-Apr.-14 19:02:23.262 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/PipelineFactory.scala, 2020-Apr.-14 19:02:23.262 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m15. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala -> Trigger. Returning: (Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala, 2020-Apr.-14 19:02:25.890 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala, 2020-Apr.-14 19:02:25.890 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m16. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala -> Trigger. Returning: (Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala, 2020-Apr.-14 19:02:25.889 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Route.scala, 2020-Apr.-14 19:02:25.889 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m17. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala -> Trigger. Returning: (Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala, 2020-Apr.-14 19:02:27.382 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Creation(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala, 2020-Apr.-14 19:02:27.382 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m18. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mQuarantining deletion event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala for 500 milliseconds[0m
+[0m[[0m[0mdebug[0m] [0m[0mTriggering event for previously quarantined deleted file: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala -> Trigger. Returning: (Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala, 2020-Apr.-14 19:02:27.381 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Deletion(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/Policy.scala, 2020-Apr.-14 19:02:27.381 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m19. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala (previous stamp: Hash(f45ad28decc3cc0bde2dd12b3b3c21f6dff4a883), current stamp: Hash(85a73a931b98b7f04c66c290265373e7a1d9e294))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala -> Trigger. Returning: (Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala, 2020-Apr.-14 19:04:23.977 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala, 2020-Apr.-14 19:04:23.977 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m20. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala (previous stamp: Hash(4cd8531f95c3439e364704a71ecb2bedd183417f), current stamp: Hash(024e6102fb349e7fd8e14084a871858f03c24a31))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala -> Trigger. Returning: (Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala, 2020-Apr.-14 19:04:28.447 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala, 2020-Apr.-14 19:04:28.447 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m21. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala (previous stamp: Hash(024e6102fb349e7fd8e14084a871858f03c24a31), current stamp: Hash(bd3d10499259745bd76f3a72bc15f6e8b0991ddb))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala -> Trigger. Returning: (Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala, 2020-Apr.-14 19:05:07.977 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala, 2020-Apr.-14 19:05:07.977 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m22. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala (previous stamp: Hash(85a73a931b98b7f04c66c290265373e7a1d9e294), current stamp: Hash(6b96419181ecbc89580aba3e1655a51f1e191009))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala -> Trigger. Returning: (Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala, 2020-Apr.-14 19:05:39.005 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala, 2020-Apr.-14 19:05:39.005 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m23. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala (previous stamp: Hash(6b96419181ecbc89580aba3e1655a51f1e191009), current stamp: Hash(c552c4ab0ac88b28920f00ac1301597477817ee2))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala -> Trigger. Returning: (Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala, 2020-Apr.-14 19:23:52.689 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Route.scala, 2020-Apr.-14 19:23:52.689 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m24. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mCreating update event for modified /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala (previous stamp: Hash(bd3d10499259745bd76f3a72bc15f6e8b0991ddb), current stamp: Hash(4d6b49d7a54ade24e6bf0972ce0e233a1d8ee74d))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived file event actions: /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala -> Trigger. Returning: (Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala, 2020-Apr.-14 19:24:05.344 ET),Trigger)[0m
+[0m[[0m[0minfo[0m] [0m[0mBuild triggered by /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala. Running 'run'.[0m
+[0m[[0m[0mdebug[0m] [0m[0m[watch] [debug] Received file event Trigger for Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala, 2020-Apr.-14 19:24:05.344 ET).[0m
+[0m[[0m[0minfo[0m] [0m[0m25. Monitoring source files for api-gateway/run...[0m
+[0m[[0m[0minfo[0m] [0m[0m    Press <enter> to interrupt or '?' for more options.[0m
+[0m[[0m[0mdebug[0m] [0m[0mapi-gateway / Compile / run - Accepted event for /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived Update(/Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala,FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false),FileAttributes(isDirectory = false, isOther = false,isRegularFile = true, isSymbolicLink = false))[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mReceived event for path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m
+[0m[[0m[0mdebug[0m] [0m[0mDropping event for unmodified path /Users/justinkwan/Desktop/api-gateway/src/main/scala/domain/entities/pipeline/Policy.scala[0m

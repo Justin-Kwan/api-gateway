@@ -1,0 +1,549 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mJsonHandlerTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should read mock json data from gateway config file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should read empty mock json data from gateway config file[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should read long mock json data from gateway config file *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[[[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "_id": "5e96bbf1ec89f70ef940d2bd",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "index": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "guid": "23663a5e-4fa5-467b-b81c-486653d44e48",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "isActive": true,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "balance": "$2,894.68",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "age": 33,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "eyeColor": "blue",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "name": "Mcclure Snow",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "gender": "male",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "company": "NAVIR",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "email": "mccluresnow@navir.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "phone": "+1 (961) 552-3572",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "address": "886 Borinquen Pl, Bennett, Missouri, 7512",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "about": "Culpa ad ullamco ea commodo labore adipisicing est aute consectetur proident reprehenderit non qui. Pariatur in laborum mollit irure aliquip quis excepteur quis nulla. Laboris adipisicing adipisicing eiusmod ullamco velit irure ex labore culpa aliquip voluptate ad adipisicing. Occaecat incididunt magna veniam elit mollit in enim in voluptate mollit id. Aliqua cupidatat deserunt cillum anim.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "registered": "2015-12-18T03:14:36 +05:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "latitude": -21.214939,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "longitude": 93.095523,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "velit",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "excepteur",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "veniam",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "officia",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "veniam",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "ad",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "cillum"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Kelli Buchanan"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Alyson Shepard"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Mckay Russo"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "greeting": "Hello, Mcclure Snow! You have 10 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "favoriteFruit": "strawberry"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "_id": "5e96bbf156ac6237c77a8b50",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "index": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "guid": "b0c38138-a6b2-4422-9541-93d4c612b8b5",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "isActive": false,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "balance": "$2,935.76",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "age": 33,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "eyeColor": "green",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "name": "Maude Robles",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "gender": "female",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "company": "XOGGLE",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "email": "mauderobles@xoggle.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "phone": "+1 (993) 471-3861",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "address": "932 Williams Avenue, Goochland, Guam, 2003",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "about": "Pariatur consequat ea velit nulla dolor qui anim ad pariatur commodo ut amet reprehenderit cillum. Lorem occaecat velit ex consequat ex laboris cupidatat nulla minim. Et commodo nulla ex aliquip cillum. Dolore ullamco fugiat incididunt laborum voluptate et labore nostrud eiusmod laborum aute. Esse aliquip dolore magna qui nostrud cillum magna voluptate amet amet commodo. Enim dolor dolore proident eiusmod commodo sit ullamco cillum duis exercitation eiusmod eiusmod est commodo.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "registered": "2016-10-24T11:50:57 +04:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "latitude": -65.300902,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "longitude": -160.338621,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "fugiat",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "proident",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "enim",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "sint",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "aute",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "quis",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "tempor"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Velma Young"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Nadia Duffy"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Queen Freeman"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "greeting": "Hello, Maude Robles! You have 8 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "favoriteFruit": "banana"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "_id": "5e96bbf178b9841c166c33ca",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "index": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "guid": "382f8093-3dea-4493-8425-e163e7440b94",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "isActive": false,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "balance": "$3,958.16",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "age": 34,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "eyeColor": "brown",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "name": "Joy Tyson",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "gender": "female",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "company": "SKINSERVE",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "email": "joytyson@skinserve.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "phone": "+1 (978) 418-2893",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "address": "146 Newton Street, Blende, New Hampshire, 1427",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "about": "Adipisicing ad eu eu labore laboris adipisicing pariatur ea et velit. Aute pariatur aute magna labore sunt veniam aute et ad tempor commodo aliqua. Qui dolor mollit ex anim commodo consequat. Eu ut mollit laboris Lorem aliquip adipisicing dolor nulla reprehenderit ad dolore Lorem ipsum. Non reprehenderit ex proident eiusmod aute pariatur dolor non aliqua. Ullamco ut enim nisi officia ipsum elit proident duis. Ex non nulla commodo in aliquip aliquip dolor nulla laborum minim.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "registered": "2014-03-02T01:40:33 +05:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "latitude": 35.13812,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "longitude": 139.403515,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "exercitation",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "quis",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "cupidatat",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "dolore",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "in",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "ullamco",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "cupidatat"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Vargas Gill"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Rene Berger"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Atkins Joseph"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "greeting": "Hello, Joy Tyson! You have 6 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "favoriteFruit": "apple"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "_id": "5e96bbf12c2f4457a194a513",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "index": 3,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "guid": "e584475d-c6ab-4740-ba75-dc528c610aa8",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "isActive": false,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "balance": "$1,355.75",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "age": 34,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "eyeColor": "brown",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "name": "Ophelia Gillespie",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "gender": "female",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "company": "LOCAZONE",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "email": "opheliagillespie@locazone.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "phone": "+1 (842) 490-2162",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "address": "232 Vanderveer Place, Blairstown, Iowa, 4756",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "about": "Officia et dolore do excepteur est occaecat tempor commodo sit tempor do. Sunt eiusmod quis consectetur pariatur eiusmod. Qui mollit pariatur nisi sunt nisi anim consectetur culpa deserunt adipisicing sit. Voluptate mollit do minim aute fugiat amet voluptate et. Dolore nulla est dolor eu incididunt non laborum incididunt aliquip. Eu adipisicing veniam aute ea eiusmod laborum consectetur esse. Exercitation proident cillum ea excepteur reprehenderit et ad aliqua id eu minim duis incididunt.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "registered": "2016-09-18T01:59:31 +04:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "latitude": -55.471885,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "longitude": -69.201892,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "ea",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "enim",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "labore",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "aliquip",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "minim",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "aliqua"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Blankenship Rollins"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Alvarado Wong"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Melinda Mcbride"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "greeting": "Hello, Ophelia Gillespie! You have 5 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "favoriteFruit": "banana"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "_id": "5e96bbf132571addd82073f2",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "index": 4,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "guid": "a2bf6b1e-4457-4caf-8fcb-58ba801d9f01",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "isActive": false,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "balance": "$2,963.61",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "age": 35,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "eyeColor": "brown",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "name": "Landry Holder",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "gender": "male",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "company": "MUSAPHICS",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "email": "landryholder@musaphics.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "phone": "+1 (890) 431-2501",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "address": "981 Kenmore Terrace, Dola, Minnesota, 3524",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "about": "Nulla elit minim pariatur ea est cupidatat pariatur do duis consequat consequat fugiat. Nostrud commodo mollit sit dolor officia. Est tempor nulla cupidatat do nostrud eu. Dolor non eiusmod proident occaecat nulla qui.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "registered": "2015-07-27T02:36:40 +04:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "latitude": 1.143875,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "longitude": 114.776249,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "incididunt",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "culpa",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "ut",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "adipisicing",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "commodo",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "elit",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "officia"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Phyllis Newman"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Peck Hurley"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Terry Norman"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "greeting": "Hello, Landry Holder! You have 3 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "favoriteFruit": "banana"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "_id": "5e96bbf1a80dd9845d7316ad",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "index": 5,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "guid": "a6d48481-7120-4514-ac92-de6c7fafcf30",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "isActive": false,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "balance": "$2,087.59",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "age": 23,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "eyeColor": "green",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "name": "Gabrielle Ashley",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "gender": "female",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "company": "INQUALA",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "email": "gabrielleashley@inquala.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "phone": "+1 (824) 426-3059",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "address": "694 Fleet Walk, Dante, Hawaii, 636",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "about": "Adipisicing cillum dolore in velit culpa cupidatat sunt velit proident duis sit quis culpa. Aliqua veniam sit elit Lorem et proident officia laborum velit qui tempor ad aliquip. Aliquip fugiat esse cillum voluptate.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "registered": "2014-11-08T07:43:15 +05:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "latitude": -36.711383,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "longitude": 62.209901,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "laboris",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "magna",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "proident",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "incididunt",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "duis",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "ullamco",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "commodo"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Graham Rivers"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Stephanie Meadows"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m          "name": "Tami Ayala"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "greeting": "Hello, Gabrielle Ashley! You have 4 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "favoriteFruit": "banana"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  ]]" did not equal "[]" (JsonHandlerTest.scala:316)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  Analysis:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  "[[[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m{[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "_id": "5e96bbf1ec89f70ef940d2bd",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "index": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "guid": "23663a5e-4fa5-467b-b81c-486653d44e48",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "isActive": true,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "balance": "$2,894.68",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "age": 33,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "eyeColor": "blue",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "name": "Mcclure Snow",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "gender": "male",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "company": "NAVIR",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "email": "mccluresnow@navir.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "phone": "+1 (961) 552-3572",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "address": "886 Borinquen Pl, Bennett, Missouri, 7512",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "about": "Culpa ad ullamco ea commodo labore adipisicing est aute consectetur proident reprehenderit non qui. Pariatur in laborum mollit irure aliquip quis excepteur quis nulla. Laboris adipisicing adipisicing eiusmod ullamco velit irure ex labore culpa aliquip voluptate ad adipisicing. Occaecat incididunt magna veniam elit mollit in enim in voluptate mollit id. Aliqua cupidatat deserunt cillum anim.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "registered": "2015-12-18T03:14:36 +05:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "latitude": -21.214939,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "longitude": 93.095523,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "velit",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "excepteur",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "veniam",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "officia",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "veniam",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "ad",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "cillum"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Kelli Buchanan"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Alyson Shepard"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Mckay Russo"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "greeting": "Hello, Mcclure Snow! You have 10 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "favoriteFruit": "strawberry"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "_id": "5e96bbf156ac6237c77a8b50",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "index": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "guid": "b0c38138-a6b2-4422-9541-93d4c612b8b5",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "isActive": false,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "balance": "$2,935.76",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "age": 33,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "eyeColor": "green",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "name": "Maude Robles",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "gender": "female",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "company": "XOGGLE",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "email": "mauderobles@xoggle.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "phone": "+1 (993) 471-3861",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "address": "932 Williams Avenue, Goochland, Guam, 2003",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "about": "Pariatur consequat ea velit nulla dolor qui anim ad pariatur commodo ut amet reprehenderit cillum. Lorem occaecat velit ex consequat ex laboris cupidatat nulla minim. Et commodo nulla ex aliquip cillum. Dolore ullamco fugiat incididunt laborum voluptate et labore nostrud eiusmod laborum aute. Esse aliquip dolore magna qui nostrud cillum magna voluptate amet amet commodo. Enim dolor dolore proident eiusmod commodo sit ullamco cillum duis exercitation eiusmod eiusmod est commodo.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "registered": "2016-10-24T11:50:57 +04:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "latitude": -65.300902,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "longitude": -160.338621,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "fugiat",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "proident",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "enim",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "sint",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "aute",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "quis",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "tempor"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Velma Young"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Nadia Duffy"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Queen Freeman"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "greeting": "Hello, Maude Robles! You have 8 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "favoriteFruit": "banana"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "_id": "5e96bbf178b9841c166c33ca",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "index": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "guid": "382f8093-3dea-4493-8425-e163e7440b94",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "isActive": false,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "balance": "$3,958.16",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "age": 34,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "eyeColor": "brown",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "name": "Joy Tyson",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "gender": "female",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "company": "SKINSERVE",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "email": "joytyson@skinserve.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "phone": "+1 (978) 418-2893",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "address": "146 Newton Street, Blende, New Hampshire, 1427",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "about": "Adipisicing ad eu eu labore laboris adipisicing pariatur ea et velit. Aute pariatur aute magna labore sunt veniam aute et ad tempor commodo aliqua. Qui dolor mollit ex anim commodo consequat. Eu ut mollit laboris Lorem aliquip adipisicing dolor nulla reprehenderit ad dolore Lorem ipsum. Non reprehenderit ex proident eiusmod aute pariatur dolor non aliqua. Ullamco ut enim nisi officia ipsum elit proident duis. Ex non nulla commodo in aliquip aliquip dolor nulla laborum minim.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "registered": "2014-03-02T01:40:33 +05:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "latitude": 35.13812,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "longitude": 139.403515,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "exercitation",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "quis",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "cupidatat",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "dolore",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "in",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "ullamco",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "cupidatat"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Vargas Gill"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Rene Berger"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Atkins Joseph"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "greeting": "Hello, Joy Tyson! You have 6 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "favoriteFruit": "apple"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "_id": "5e96bbf12c2f4457a194a513",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "index": 3,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "guid": "e584475d-c6ab-4740-ba75-dc528c610aa8",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "isActive": false,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "balance": "$1,355.75",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "age": 34,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "eyeColor": "brown",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "name": "Ophelia Gillespie",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "gender": "female",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "company": "LOCAZONE",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "email": "opheliagillespie@locazone.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "phone": "+1 (842) 490-2162",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "address": "232 Vanderveer Place, Blairstown, Iowa, 4756",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "about": "Officia et dolore do excepteur est occaecat tempor commodo sit tempor do. Sunt eiusmod quis consectetur pariatur eiusmod. Qui mollit pariatur nisi sunt nisi anim consectetur culpa deserunt adipisicing sit. Voluptate mollit do minim aute fugiat amet voluptate et. Dolore nulla est dolor eu incididunt non laborum incididunt aliquip. Eu adipisicing veniam aute ea eiusmod laborum consectetur esse. Exercitation proident cillum ea excepteur reprehenderit et ad aliqua id eu minim duis incididunt.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "registered": "2016-09-18T01:59:31 +04:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "latitude": -55.471885,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "longitude": -69.201892,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "ea",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "enim",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "id",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "labore",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "aliquip",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "minim",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "aliqua"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Blankenship Rollins"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Alvarado Wong"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Melinda Mcbride"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "greeting": "Hello, Ophelia Gillespie! You have 5 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "favoriteFruit": "banana"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "_id": "5e96bbf132571addd82073f2",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "index": 4,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "guid": "a2bf6b1e-4457-4caf-8fcb-58ba801d9f01",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "isActive": false,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "balance": "$2,963.61",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "age": 35,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "eyeColor": "brown",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "name": "Landry Holder",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "gender": "male",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "company": "MUSAPHICS",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "email": "landryholder@musaphics.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "phone": "+1 (890) 431-2501",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "address": "981 Kenmore Terrace, Dola, Minnesota, 3524",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "about": "Nulla elit minim pariatur ea est cupidatat pariatur do duis consequat consequat fugiat. Nostrud commodo mollit sit dolor officia. Est tempor nulla cupidatat do nostrud eu. Dolor non eiusmod proident occaecat nulla qui.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "registered": "2015-07-27T02:36:40 +04:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "latitude": 1.143875,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "longitude": 114.776249,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "incididunt",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "culpa",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "ut",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "adipisicing",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "commodo",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "elit",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "officia"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Phyllis Newman"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Peck Hurley"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Terry Norman"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "greeting": "Hello, Landry Holder! You have 3 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "favoriteFruit": "banana"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "_id": "5e96bbf1a80dd9845d7316ad",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "index": 5,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "guid": "a6d48481-7120-4514-ac92-de6c7fafcf30",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "isActive": false,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "balance": "$2,087.59",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "picture": "http://placehold.it/32x32",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "age": 23,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "eyeColor": "green",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "name": "Gabrielle Ashley",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "gender": "female",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "company": "INQUALA",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "email": "gabrielleashley@inquala.com",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "phone": "+1 (824) 426-3059",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "address": "694 Fleet Walk, Dante, Hawaii, 636",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "about": "Adipisicing cillum dolore in velit culpa cupidatat sunt velit proident duis sit quis culpa. Aliqua veniam sit elit Lorem et proident officia laborum velit qui tempor ad aliquip. Aliquip fugiat esse cillum voluptate.\r\n",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "registered": "2014-11-08T07:43:15 +05:00",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "latitude": -36.711383,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "longitude": 62.209901,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "tags": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "laboris",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "magna",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "proident",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "incididunt",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "duis",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "ullamco",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      "commodo"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "friends": [[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 0,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Graham Rivers"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 1,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Stephanie Meadows"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      },[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      {[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "id": 2,[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m        "name": "Tami Ayala"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m      }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    ],[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "greeting": "Hello, Gabrielle Ashley! You have 4 unread messages.",[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m    "favoriteFruit": "banana"[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  }[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m]]" -> "[]"[0m[0m

@@ -1,0 +1,3 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/justinkwan/Documents/WebApps/api-gateway/src/main/resources/configs/example-gateway-config.json,/Users/justinkwan/Documents/WebApps/api-gateway/target/scala-2.13/classes/configs/example-gateway-config.json)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/justinkwan/Documents/WebApps/api-gateway/src/main/resources/configs/gateway-config.json,/Users/justinkwan/Documents/WebApps/api-gateway/target/scala-2.13/classes/configs/gateway-config.json)[0m

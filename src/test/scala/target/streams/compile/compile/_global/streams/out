@@ -1,0 +1,22 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/justinkwan/Documents/WebApps/api-gateway/src/test/scala/JsonHandlerTest.scala:1:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest._[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/justinkwan/Documents/WebApps/api-gateway/src/test/scala/JsonHandlerTest.scala:2:12: object scalatest is not a member of package org[0m
+[0m[[0m[31merror[0m] [0m[0mimport org.scalatest.BeforeAndAfter[0m
+[0m[[0m[31merror[0m] [0m[0m           ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/justinkwan/Documents/WebApps/api-gateway/src/test/scala/JsonHandlerTest.scala:3:8: not found: object SharedUtilities[0m
+[0m[[0m[31merror[0m] [0m[0mimport SharedUtilities.JsonHandler[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/justinkwan/Documents/WebApps/api-gateway/src/test/scala/JsonHandlerTest.scala:5:31: not found: type FlatSpec[0m
+[0m[[0m[31merror[0m] [0m[0mclass JsonHandlerTest extends FlatSpec {[0m
+[0m[[0m[31merror[0m] [0m[0m                              ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/justinkwan/Documents/WebApps/api-gateway/src/test/scala/JsonHandlerTest.scala:7:3: not found: value test[0m
+[0m[[0m[31merror[0m] [0m[0m  test("reading json") {[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/justinkwan/Documents/WebApps/api-gateway/src/test/scala/JsonHandlerTest.scala:8:22: not found: type JsonHandler[0m
+[0m[[0m[31merror[0m] [0m[0m    val jsonHandler: JsonHandler = new JsonHandler()[0m
+[0m[[0m[31merror[0m] [0m[0m                     ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/justinkwan/Documents/WebApps/api-gateway/src/test/scala/JsonHandlerTest.scala:8:40: not found: type JsonHandler[0m
+[0m[[0m[31merror[0m] [0m[0m    val jsonHandler: JsonHandler = new JsonHandler()[0m
+[0m[[0m[31merror[0m] [0m[0m                                       ^[0m
+[0m[[0m[31merror[0m] [0m[0m7 errors found[0m

@@ -1,0 +1,12 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mPipelineTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mconstructor() test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set the name on instantiation (a long string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msetName() / getName() test[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the name (a long string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32maddEndpoint() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add 1 endpoint, a mock policy[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add 1 endpoint, a mock service[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add 2 endpoints, a mock policy and a mock service[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mgetEndpoints() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get no endpoints (empty)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get 5 endpoints in correct order[0m[0m
