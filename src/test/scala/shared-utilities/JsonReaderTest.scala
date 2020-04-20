@@ -1,7 +1,6 @@
 import java.io._
 
 import org.scalatest.FunSpec
-import org.scalatest.BeforeAndAfter
 
 import sharedutilities.JsonReader
 

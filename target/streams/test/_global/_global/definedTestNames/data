@@ -1,1 +1,1 @@
-["EndpointTest","PolicyTest","JsonReaderTest","PipelineTest"]
+["PipelineTest","PolicyTest","HttpRequestClientTest","EndpointTest","JsonReaderTest"]

@@ -1,7 +1,7 @@
 import scala.collection.immutable.Vector
 
 import org.scalatest.FunSpec
-import org.scalatest.BeforeAndAfter
+import org.scalatest.BeforeAndAfterEach
 import org.scalatest.PrivateMethodTester
 import org.scalatest.Matchers
 

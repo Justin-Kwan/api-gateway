@@ -1,0 +1,7 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mHttpRequestClientTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mmakeGetRequest() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should make get request with mockResponse1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should make get request with mockResponse2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mmakePostRequest() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should make post request with mockResponse1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should make post request with mockResponse2[0m[0m

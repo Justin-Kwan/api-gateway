@@ -34,7 +34,9 @@ libraryDependencies += "io.spray" %%  "spray-json" % "1.3.5"
 // Http Requests
 // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
 libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12"
-
+// Server Mocking
+// https://mvnrepository.com/artifact/com.github.tomakehurst/wiremock-jre8
+libraryDependencies += "com.github.tomakehurst" % "wiremock" % "2.26.3" jar()
 
 // You can use Scaladex, an index of all known published Scala libraries. There,
 // after you find the library you want, you can just copy/paste the dependency

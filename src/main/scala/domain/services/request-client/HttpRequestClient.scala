@@ -1,4 +1,4 @@
-package requeststrategy
+package requestclient
 
 import org.apache.http.impl.client.DefaultHttpClient
 import org.apache.http.client.HttpClient
@@ -12,7 +12,7 @@ import org.apache.http.client.methods.HttpDelete
 
 final object HttpRequestClient {
 
-  def makeGetRequest(url: String, requestBody: String): String = {
+  def makeGetRequest(url: String): String = {
     val getRequest = new HttpGet(url)
     getRequest.setHeader("Content-type", "application/json")
     val response = (new DefaultHttpClient).execute(getRequest)

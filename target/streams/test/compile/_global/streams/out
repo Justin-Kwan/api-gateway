@@ -1,11 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0m/Users/justinkwan/Documents/WebApps/api-gateway/src/test/scala/domain/entities/pipeline/PipelineFactoryTest.scala:1:1: [0m
-[0m[[0m[33mwarn[0m] [0m[0mFound names but no class, trait or object is defined in the compilation unit.[0m
-[0m[[0m[33mwarn[0m] [0m[0mThe incremental compiler cannot record the dependency information in such case.[0m
-[0m[[0m[33mwarn[0m] [0m[0mSome errors like unused import referring to a non-existent class might not be reported.[0m
-[0m[[0m[33mwarn[0m] [0m[0m    [0m
-[0m[[0m[33mwarn[0m] [0m[0mimport scala.collection.immutable.Vector[0m
-[0m[[0m[33mwarn[0m] [0m[0m^[0m
-[0m[[0m[33mwarn[0m] [0m[0mthere was one deprecation warning (since 2.13.0)[0m
-[0m[[0m[33mwarn[0m] [0m[0mthere were two deprecation warnings (since 3.1.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere were two deprecation warnings (since 2.13.0)[0m
+[0m[[0m[33mwarn[0m] [0m[0mthere was one deprecation warning (since 3.1.0)[0m
 [0m[[0m[33mwarn[0m] [0m[0mthere were three deprecation warnings in total; re-run with -deprecation for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mfour warnings found[0m
+[0m[[0m[33mwarn[0m] [0m[0mthree warnings found[0m
