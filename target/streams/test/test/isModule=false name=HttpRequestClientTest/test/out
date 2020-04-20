@@ -5,3 +5,12 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mmakePostRequest() tests[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should make post request with mockResponse1[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should make post request with mockResponse2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mmakePutRequest() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should make put request with mockResponse1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should make put request with mockResponse2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mmakePatchRequest() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should make patch request with mockResponse1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should make patch request with mockResponse2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mmakeDeleteRequest() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should make delete request with mockResponse1[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should make delete request with mockResponse2[0m[0m

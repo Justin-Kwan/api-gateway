@@ -47,8 +47,8 @@ final object HttpRequestClient {
     return responseString
   }
 
-  def makeDeleteRequest(url: String, resourceParam: String): String = {
-    val deleteRequest = new HttpDelete(url + resourceParam)
+  def makeDeleteRequest(url: String): String = {
+    val deleteRequest = new HttpDelete(url)
     deleteRequest.setHeader("Content-type", "application/json")
     val response = (new DefaultHttpClient).execute(deleteRequest)
     val responseString = EntityUtils.toString(response.getEntity())
