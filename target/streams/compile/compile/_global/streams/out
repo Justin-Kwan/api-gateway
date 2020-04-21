@@ -1,2 +1,4 @@
-[0m[[0m[33mwarn[0m] [0m[0mthere were 5 deprecation warnings; re-run with -deprecation for details[0m
-[0m[[0m[33mwarn[0m] [0m[0mone warning found[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/justinkwan/Documents/WebApps/api-gateway/src/main/scala/domain/services/networking-clients/RequestSelector.scala:7:48: ')' expected but ':' found.[0m
+[0m[[0m[31merror[0m] [0m[0m  def selectRequestMethod(httpVerb: String): (u: String, r: String) = {[0m
+[0m[[0m[31merror[0m] [0m[0m                                               ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

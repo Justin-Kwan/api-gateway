@@ -1,16 +1,26 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mHttpRequestClientTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mmakeGetRequest() tests[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should make get request with mockResponse1[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should make get request with mockResponse2[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mmakePostRequest() tests[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should make post request with mockResponse1[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should make post request with mockResponse2[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mmakePutRequest() tests[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should make put request with mockResponse1[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should make put request with mockResponse2[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mmakePatchRequest() tests[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should make patch request with mockResponse1[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should make patch request with mockResponse2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should make get request with mockResponse1 !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should make get request with mockResponse2 !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should fail making get request due to timeout !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should fail making get request due to no endpoint !!! IGNORED !!![0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mmakeDeleteRequest() tests[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should make delete request with mockResponse1[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should make delete request with mockResponse2[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should make delete request with mockResponse1 !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should make delete request with mockResponse2 !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should fail making delete request due to timeout !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should fail making delete request due to no endpoint !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mmakePostRequest() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should make post request with mockResponse1 !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should make post request with mockResponse2 !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should fail making post request due to timeout !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should fail making post request due to no endpoint !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mmakePutRequest() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should make put request with mockResponse1 !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should make put request with mockResponse2 !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should fail making put request due to timeout !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should fail making put request due to no endpoint !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mmakePatchRequest() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should make patch request with mockResponse1 !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should make patch request with mockResponse2 !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should fail making patch request due to timeout !!! IGNORED !!![0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[33m- should fail making patch request due to no endpoint !!! IGNORED !!![0m[0m

@@ -7,7 +7,6 @@ import spray.json.DefaultJsonProtocol._
 
 final class PipelineFactory {
 
-
   private def createPipeline() {
 
   }
@@ -17,6 +16,7 @@ final class PipelineFactory {
     var pipelines = mutable.Map[String, Pipeline]()
 
     val jsonAst = JsonParser(gatewayConfigJson)
+    val myObject = jsonAst.convertTo[MyObjectType]
 
 
     // calls parser

@@ -1,4 +1,4 @@
-// package requestclient
+// package networkingclients
 //
 // import requestclient.HttpRequestClient
 //
