@@ -3,14 +3,13 @@ package pipeline
 import scala.collection.immutable.Vector
 import scala.collection.mutable.ArrayBuffer
 
-import endpointstages.Endpoint
-import endpointstages.Service
-import endpointstages.Policy
+import servicestages.Service
+import servicestages.Middleware
 
 final class Pipeline {
 
   private var name: String      = _
-  private var endpoints         = Vector[Endpoint]()
+  private var services          = Vector[Service]()
   private var responseAggregate = ArrayBuffer[String]()
 
   def this(name: String) = {
@@ -22,16 +21,16 @@ final class Pipeline {
     this.name = name
   }
 
+  def pipeService(service: Service): Unit = {
+    this.services = this.services :+ service
+  }
+
   def getName(): String = {
     return this.name
   }
 
-  def addEndpoint(endpoint: Endpoint): Unit = {
-    this.endpoints = this.endpoints :+ endpoint
-  }
-
-  def getEndpoints(): Vector[Endpoint] = {
-    return this.endpoints
+  def getServices(): Vector[Service] = {
+    return this.services
   }
 
 }

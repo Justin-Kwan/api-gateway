@@ -3,10 +3,10 @@
 [0m[[0m[0minfo[0m] [0m[0m[32m- should set the name on instantiation (a long string)[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32msetName() / getName() test[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the name (a long string)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32maddEndpoint() tests[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should add 1 endpoint, a mock policy[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should add 1 endpoint, a mock service[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should add 2 endpoints, a mock policy and a mock service[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32mgetEndpoints() tests[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should get no endpoints (empty)[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[32m- should get 5 endpoints in correct order[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mpipeService() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add 1 service, a mock middleware[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add 1 service, a mock service[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should add 2 services, a mock middleware and a mock service[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mgetServices() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get no services (empty)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should get 5 services in correct order[0m[0m

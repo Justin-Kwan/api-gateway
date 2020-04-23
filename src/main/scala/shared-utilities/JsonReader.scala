@@ -1,17 +1,16 @@
 package sharedutilities
 
-import scala.io.Source
 import java.io._
+import scala.io.Source
 
 final object JsonReader {
 
-  final val filePaths = Map(
+  private val filePaths = Map(
     "GATEWAY_CONFIG" -> "configs/gateway-config.json"
   )
 
   def openFile(fileKey: String): String = {
-    val file = new File(
-      getClass
+    val file = new File(getClass
       .getClassLoader
       .getResource(filePaths(fileKey))
       .getPath

@@ -5,8 +5,8 @@ import org.scalatest.BeforeAndAfterEach
 import org.scalatest.PrivateMethodTester
 import org.scalatest.Matchers
 
-import endpointstages.Policy
-import endpointstages.Service
+import servicestages.Middleware
+import servicestages.Service
 import pipeline.Pipeline
 
 // final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodTester with Matchers {

@@ -5,8 +5,8 @@ import org.scalatest.BeforeAndAfter
 import org.scalatest.PrivateMethodTester
 import org.scalatest.Matchers
 
-import endpointstages.Policy
-import endpointstages.Service
+import servicestages.Middleware
+import servicestages.Service
 import pipeline.Pipeline
 
 final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodTester with Matchers {
@@ -37,14 +37,14 @@ final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodT
     pipeline = new Pipeline()
   }
 
-  def getMockPolicy(name: String, url: String, protocol: String, method: String, successCondition: String): Policy = {
-    val mockPolicy = new Policy()
-    mockPolicy.setName(name)
-    mockPolicy.setUrl(url)
-    mockPolicy.setProtocol(protocol)
-    mockPolicy.setMethod(method)
-    mockPolicy.setSuccessCondition(successCondition)
-    return mockPolicy
+  def getMockMiddleware(name: String, url: String, protocol: String, method: String, successResponse: String): Middleware = {
+    val mockMiddleware = new Middleware()
+    mockMiddleware.setName(name)
+    mockMiddleware.setUrl(url)
+    mockMiddleware.setProtocol(protocol)
+    mockMiddleware.setMethod(method)
+    mockMiddleware.setSuccessResponse(successResponse)
+    return mockMiddleware
   }
 
   def getMockService(name: String, url: String, protocol: String, method: String): Service = {
@@ -71,22 +71,22 @@ final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodT
     }
   }
 
-  describe("addEndpoint() tests") {
-    it("should add 1 endpoint, a mock policy") {
-      val mockPolicy1 = this.getMockPolicy(
-        "mock policy 1",
-        "mockpolicyurl1.com",
-        "mock policy protocol 1",
-        "mock policy method 1",
+  describe("pipeService() tests") {
+    it("should add 1 service, a mock middleware") {
+      val mockMiddleware1 = this.getMockMiddleware(
+        "mock middleware 1",
+        "mockmiddlewareurl1.com",
+        "mock middleware protocol 1",
+        "mock middleware method 1",
         "mock sucess condition 1"
       )
 
-      val mockEndpointStages = Vector(mockPolicy1)
-      pipeline.addEndpoint(mockPolicy1)
-      pipeline.getEndpoints() should be (mockEndpointStages)
+      val mockServiceStages = Vector(mockMiddleware1)
+      pipeline.pipeService(mockMiddleware1)
+      pipeline.getServices() should be (mockServiceStages)
     }
 
-    it("should add 1 endpoint, a mock service") {
+    it("should add 1 service, a mock service") {
       val mockService1 = this.getMockService(
         "mock service 1",
         "mockserviceurl1.com",
@@ -94,17 +94,17 @@ final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodT
         "mock service method 1"
       )
 
-      val mockEndpointStages = Vector(mockService1)
-      pipeline.addEndpoint(mockService1)
-      pipeline.getEndpoints() should be (mockEndpointStages)
+      val mockServiceStages = Vector(mockService1)
+      pipeline.pipeService(mockService1)
+      pipeline.getServices() should be (mockServiceStages)
     }
 
-    it("should add 2 endpoints, a mock policy and a mock service") {
-      val mockPolicy1 = this.getMockPolicy(
-        "mock policy 1",
-        "mockpolicyurl1.com",
-        "mock policy protocol 1",
-        "mock policy method 1",
+    it("should add 2 services, a mock middleware and a mock service") {
+      val mockMiddleware1 = this.getMockMiddleware(
+        "mock middleware 1",
+        "mockmiddlewareurl1.com",
+        "mock middleware protocol 1",
+        "mock middleware method 1",
         "mock sucess condition 1"
       )
 
@@ -115,33 +115,33 @@ final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodT
         "mock service method 1"
       )
 
-      val mockEndpointStages = Vector(mockPolicy1, mockService1)
-      pipeline.addEndpoint(mockPolicy1)
-      pipeline.addEndpoint(mockService1)
-      pipeline.getEndpoints() should be (mockEndpointStages)
+      val mockServiceStages = Vector(mockMiddleware1, mockService1)
+      pipeline.pipeService(mockMiddleware1)
+      pipeline.pipeService(mockService1)
+      pipeline.getServices() should be (mockServiceStages)
     }
   }
 
-  describe("getEndpoints() tests") {
-    it("should get no endpoints (empty)") {
-      val mockEndpointStages = Vector()
-      pipeline.getEndpoints() should be (mockEndpointStages)
+  describe("getServices() tests") {
+    it("should get no services (empty)") {
+      val mockServiceStages = Vector()
+      pipeline.getServices() should be (mockServiceStages)
     }
 
-    it("should get 5 endpoints in correct order") {
-      val mockPolicy1 = this.getMockPolicy(
-        "mock policy 1",
-        "mockpolicyurl1.com",
-        "mock policy protocol 1",
-        "mock policy method 1",
+    it("should get 5 services in correct order") {
+      val mockMiddleware1 = this.getMockMiddleware(
+        "mock middleware 1",
+        "mockmiddlewareurl1.com",
+        "mock middleware protocol 1",
+        "mock middleware method 1",
         "mock sucess condition 1"
       )
 
-      val mockPolicy2 = this.getMockPolicy(
-        "mock policy 2",
-        "mockpolicyurl2.com",
-        "mock policy protocol 2",
-        "mock policy method 2",
+      val mockMiddleware2 = this.getMockMiddleware(
+        "mock middleware 2",
+        "mockmiddlewareurl2.com",
+        "mock middleware protocol 2",
+        "mock middleware method 2",
         "mock sucess condition 2"
       )
 
@@ -166,13 +166,13 @@ final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodT
         "mock service method 3"
       )
 
-      val mockEndpointStages = Vector(mockPolicy1, mockService1, mockPolicy2, mockService2, mockService3)
-      pipeline.addEndpoint(mockPolicy1)
-      pipeline.addEndpoint(mockService1)
-      pipeline.addEndpoint(mockPolicy2)
-      pipeline.addEndpoint(mockService2)
-      pipeline.addEndpoint(mockService3)
-      pipeline.getEndpoints() should be (mockEndpointStages)
+      val mockServiceStages = Vector(mockMiddleware1, mockService1, mockMiddleware2, mockService2, mockService3)
+      pipeline.pipeService(mockMiddleware1)
+      pipeline.pipeService(mockService1)
+      pipeline.pipeService(mockMiddleware2)
+      pipeline.pipeService(mockService2)
+      pipeline.pipeService(mockService3)
+      pipeline.getServices() should be (mockServiceStages)
     }
   }
 

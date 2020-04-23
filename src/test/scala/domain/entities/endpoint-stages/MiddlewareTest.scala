@@ -1,9 +1,9 @@
 import org.scalatest.FunSpec
 import org.scalatest.BeforeAndAfter
 
-import endpointstages.Policy
+import servicestages.Middleware
 
-final class PolicyTest extends FunSpec with BeforeAndAfter {
+final class MiddlewareTest extends FunSpec with BeforeAndAfter {
 
   final val EmptyMockString = ""
   final val ShortMockString = "rest"
@@ -27,26 +27,26 @@ final class PolicyTest extends FunSpec with BeforeAndAfter {
   mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
   bibendum sodales, augue velit cur123sus nunc,"""
 
-  var policy: Policy = _
+  var middleware: Middleware = _
 
   before {
-    policy = new Policy()
+    middleware = new Middleware()
   }
 
-  describe("setSuccessCondition() / getSuccessCondition() tests") {
+  describe("setSuccessResponse() / getSuccessResponse() tests") {
     it("should set and get the success condition (an empty string)") {
-      policy.setSuccessCondition(EmptyMockString)
-      assert(policy.getSuccessCondition() == EmptyMockString)
+      middleware.setSuccessResponse(EmptyMockString)
+      assert(middleware.getSuccessResponse() == EmptyMockString)
     }
 
     it("should set and get the success condition (a short string)") {
-      policy.setSuccessCondition(ShortMockString)
-      assert(policy.getSuccessCondition() == ShortMockString)
+      middleware.setSuccessResponse(ShortMockString)
+      assert(middleware.getSuccessResponse() == ShortMockString)
     }
 
     it("should set and get the success condition (a long string)") {
-      policy.setSuccessCondition(LongMockString)
-      assert(policy.getSuccessCondition() == LongMockString)
+      middleware.setSuccessResponse(LongMockString)
+      assert(middleware.getSuccessResponse() == LongMockString)
     }
   }
 

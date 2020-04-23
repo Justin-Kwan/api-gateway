@@ -1,0 +1,5 @@
+[0m[[0m[0minfo[0m] [0m[0m[32mMiddlewareTest:[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32msetSuccessResponse() / getSuccessResponse() tests[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the success condition (an empty string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the success condition (a short string)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should set and get the success condition (a long string)[0m[0m

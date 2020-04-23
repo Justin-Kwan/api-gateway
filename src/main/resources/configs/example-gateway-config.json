@@ -4,19 +4,19 @@
     {
       "name": "pipeline1",
 
-      "policies": [{
-          "name": "policy1",
-          "url": "policy1.com",
+      "middlewares": [{
+          "name": "1",
+          "url": "1.com",
           "protocol": "rest",
           "method": "post",
-          "successCondition": "user authorized"
+          "successResponse": "user authorized"
         },
         {
-          "name": "policy1",
-          "url": "policy1.com",
+          "name": "1",
+          "url": "1.com",
           "protocol": "rest",
           "method": "post",
-          "successCondition": "user authorized"
+          "successResponse": "user authorized"
         }
       ],
       "services": [{
@@ -37,19 +37,19 @@
     {
       "name": "pipeline2",
 
-      "policies": [{
-          "name": "policy1",
-          "url": "policy1.com",
+      "middlewares": [{
+          "name": "1",
+          "url": "1.com",
           "protocol": "rest",
           "method": "post",
-          "successCondition": "user authorized"
+          "successResponse": "user authorized"
         },
         {
-          "name": "policy1",
-          "url": "policy1.com",
+          "name": "1",
+          "url": "1.com",
           "protocol": "rest",
           "method": "post",
-          "successCondition": "user authorized"
+          "successResponse": "user authorized"
         }
       ],
       "services": [{

@@ -30,13 +30,18 @@ libraryDependencies += "org.scalactic" %% "scalactic" % "3.1.1"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.1" % "test"
 resolvers += "Artima Maven Repository" at "http://repo.artima.com/releases"
 // Json parsing
-libraryDependencies += "io.spray" %%  "spray-json" % "1.3.5"
+// https://mvnrepository.com/artifact/org.json/json
+libraryDependencies += "org.json" % "json" % "20190722" jar()
+// https://mvnrepository.com/artifact/com.google.code.gson/gson
+libraryDependencies += "com.google.code.gson" % "gson" % "2.8.6"
 // Http Requests
 // https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient
 libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12"
 // Server Mocking
 // https://mvnrepository.com/artifact/com.github.tomakehurst/wiremock-jre8
 libraryDependencies += "com.github.tomakehurst" % "wiremock" % "2.26.3" jar()
+
+
 
 // You can use Scaladex, an index of all known published Scala libraries. There,
 // after you find the library you want, you can just copy/paste the dependency
