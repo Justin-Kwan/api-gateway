@@ -11,6 +11,7 @@ import com.google.gson.JsonParser;
 import pipeline.Pipeline
 import servicestages.Middleware
 import servicestages.Service
+import networking.HttpRequestClient
 
 
 final class PipelineFactory {
@@ -35,8 +36,8 @@ final class PipelineFactory {
         classOf[Middleware]
       )
 
-      requestFunction = getRequestFunction(middleware.getMethod())
-      middleware.setRequestFunction(requestFunction)
+      val requestFunc: (String, String) => String = HttpRequestClient.getRequestFunc(middleware.getMethod())
+      middleware.setRequestFunc(requestFunc)
       pipeline.pipeService(middleware)
     }
 
@@ -47,8 +48,8 @@ final class PipelineFactory {
         classOf[Service]
       )
 
-      requestFunction = getRequestFunction(service.getMethod())
-      middleware.setRequestFunction(requestFunction)
+      val requestFunc: (String, String) => String = HttpRequestClient.getRequestFunc(service.getMethod())
+      service.setRequestFunc(requestFunc)
       pipeline.pipeService(service)
     }
 
@@ -66,7 +67,7 @@ final class PipelineFactory {
     for(i <- 0 to pipelineCount) {
       val pipelineJson: JsonObject = pipelinesJson.get(i).getAsJsonObject()
       val pipeline: Pipeline = this.getPipeline(pipelineJson)
-      this.pipelines += (pipeline.getName() -> pipeline)
+      pipelines += (pipeline.getName() -> pipeline)
 		}
 
     return pipelines

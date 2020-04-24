@@ -9,10 +9,10 @@ import com.github.tomakehurst.wiremock.WireMockServer
 import com.github.tomakehurst.wiremock.WireMockServer._
 import com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig
 
-import networkingclients.HttpRequestClient
+import networking.HttpRequestClient
 
 
-@Ignore // this test suite takes a very long time
+//@Ignore // this test suite takes a very long time
 final class HttpRequestClientTest extends FunSpec with BeforeAndAfterEach {
 
   final val MOCK_GET_RESPONSE1 = "{\"mockResponse: \": \"get\"}"
@@ -41,6 +41,7 @@ final class HttpRequestClientTest extends FunSpec with BeforeAndAfterEach {
   // mock server constants
   final private val LONG_DELAY           = 5500
   final private val SHORT_DELAY          = 4500
+  final private val NO_DELAY             = 0
   final private val MOCK_PORT            = 5000
   final private val MOCK_HOSTNAME        = "localhost"
   final private val MOCK_PATH            = "/v1/mock/api"
@@ -234,6 +235,43 @@ final class HttpRequestClientTest extends FunSpec with BeforeAndAfterEach {
       this.mockServer.stop()
       val response = HttpRequestClient.makePatchRequest(MOCK_URL, mockRequestBody2)
       assert(response == this.CONNECTION_REFUSED_RESPONSE)
+    }
+  }
+
+  describe("getRequestFunc() tests") {
+    it("should get a makeGetRequest function (asserting function's response)") {
+      this.configMockServerGetResponse(this.MOCK_GET_RESPONSE1, this.NO_DELAY)
+      val requestFunc: (String, String) => String = HttpRequestClient.getRequestFunc("get")
+      val response = requestFunc(MOCK_URL, "")
+      assert(response == this.MOCK_GET_RESPONSE1)
+    }
+
+    it("should get makeDeleteRequest function (asserting function's response)") {
+      this.configMockServerDeleteResponse(this.MOCK_DELETE_RESPONSE1, this.NO_DELAY)
+      val requestFunc: (String, String) => String = HttpRequestClient.getRequestFunc("delete")
+      val response = requestFunc(MOCK_URL + MOCK_DELETE_RESOURCE, "")
+      assert(response == this.MOCK_DELETE_RESPONSE1)
+    }
+
+    it("should get makePostRequest function (asserting function's response)") {
+      this.configMockServerPostResponse(mockRequestBody1, this.MOCK_POST_RESPONSE1, this.NO_DELAY)
+      val requestFunc: (String, String) => String = HttpRequestClient.getRequestFunc("post")
+      val response = requestFunc(MOCK_URL, mockRequestBody1)
+      assert(response == this.MOCK_POST_RESPONSE1)
+    }
+
+    it("should get makePutRequest function (asserting function's response)") {
+      this.configMockServerPutResponse(mockRequestBody1, this.MOCK_PUT_RESPONSE1, this.NO_DELAY)
+      val requestFunc: (String, String) => String = HttpRequestClient.getRequestFunc("put")
+      val response = requestFunc(MOCK_URL, mockRequestBody1)
+      assert(response == this.MOCK_PUT_RESPONSE1)
+    }
+
+    it("should get makePatchRequest function (asserting function's response)") {
+      this.configMockServerPatchResponse(mockRequestBody1, this.MOCK_PATCH_RESPONSE1, this.NO_DELAY)
+      val requestFunc: (String, String) => String = HttpRequestClient.getRequestFunc("patch")
+      val response = requestFunc(MOCK_URL, mockRequestBody1)
+      assert(response == this.MOCK_PATCH_RESPONSE1)
     }
   }
 

@@ -13,9 +13,9 @@ final class Middleware extends Service {
   def getSuccessResponse(): String = {
     return this.successResponse
   }
-  
-  override def runRequest(): String = {
 
-  }
+  // override def runRequest(): String = {
+  //
+  // }
 
 }

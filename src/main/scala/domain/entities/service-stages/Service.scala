@@ -3,13 +3,15 @@ package servicestages
 import networking.HttpRequestClient
 
 // have empty var waiting for request body
-class Service /*@Inject*/ {
+class Service {
 
-  protected var name:          String = _
-  protected var url:           String = _
-  protected var protocol:      String = _
-  protected var method:        String = _
-  protected var body:          String = null
+  protected var name:     String = _
+  protected var url:      String = _
+  protected var protocol: String = _
+  protected var method:   String = _
+  protected var body:     String = ""
+  protected var requestFunction: (String, String) => String = _
+
 
   def setName(name: String): Unit = {
     this.name = name
@@ -43,14 +45,18 @@ class Service /*@Inject*/ {
     return this.method
   }
 
-  @Inject
-  def setRequestFunction(): Unit = {
-
+  def setRequestBody(body: String): Unit = {
+    this.body = body
   }
 
-  def runRequest(request: requestObj): String = {
-
-    return response
+  def setRequestFunc(requestFunction: (String, String) => String): Unit = {
+    this.requestFunction = requestFunction
   }
+
+  // test
+  // def runRequest(): String = {
+  //   this.requestFunction(request
+  //   return response
+  // }
 
 }

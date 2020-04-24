@@ -33,14 +33,12 @@ final class Pipeline {
     return this.services
   }
 
-  def execute(): Unit = {
-
-    for(i <- 0 to services.length) {
-      // either build request here on earlier
-      requestParam = requestBuilder.buildRequestParams(service, requestParamMap) // can use a try catch on map
-      services[i].runRequest(requestParam)
-    }
-
-  }
+  // def execute(): Unit = {
+  //   for(i <- 0 to services.length) {
+  //     // either build request here on earlier
+  //     requestParam = requestBuilder.buildRequestParams(service, requestParamMap) // can use a try catch on map
+  //     services[i].runRequest(requestParam)
+  //   }
+  // }
 
 }
