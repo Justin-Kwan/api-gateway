@@ -1,11 +1,15 @@
 package servicestages
 
+import networking.HttpRequestClient
+
+// have empty var waiting for request body
 class Service /*@Inject*/ {
 
-  protected var name: String = _
-  protected var url: String = _
-  protected var protocol: String = _
-  protected var method: String = _
+  protected var name:          String = _
+  protected var url:           String = _
+  protected var protocol:      String = _
+  protected var method:        String = _
+  protected var body:          String = null
 
   def setName(name: String): Unit = {
     this.name = name
@@ -39,10 +43,14 @@ class Service /*@Inject*/ {
     return this.method
   }
 
-  // injectable, change to better name
-  // def runRequest(): String = {
+  @Inject
+  def setRequestFunction(): Unit = {
 
-  //
-  // }
+  }
+
+  def runRequest(request: requestObj): String = {
+
+    return response
+  }
 
 }

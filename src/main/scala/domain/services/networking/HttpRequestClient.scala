@@ -1,4 +1,4 @@
-package networkingclients
+package networking
 
 import java.net.ConnectException
 import java.net.SocketTimeoutException
@@ -17,13 +17,6 @@ import org.apache.http.client.methods.HttpPatch
 import org.apache.http.client.methods.HttpDelete
 import org.apache.http.NoHttpResponseException
 
-trait Requestable {
-  def makeGetRequest(url: String): String
-  def makeDeleteRequest(url: String): String
-  def makePostRequest(url: String, requestBody: String): String
-  def makePutRequest(url: String, requestBody: String): String
-  def makePatchRequest(url: String, requestBody: String): String
-}
 
 final object HttpRequestClient {
 
@@ -45,11 +38,11 @@ final object HttpRequestClient {
   .build()
 
   /**
-   * Executes requestbased on received base request object's method.
+   * Executes request based on received base request object's method.
    * Either a response body is returned or an http client exception
    * is handled with an error message returned.
    *
-   * @param {HttpRequestBase} Request object superclass for all request methods
+   * @param {HttpRequestBase} Request superclass for all request methods
    * @return {String} Api response or exception error message
    */
   private def executeRequest(requestObj: HttpRequestBase): String = {
@@ -62,22 +55,34 @@ final object HttpRequestClient {
       response.close()
     }
     catch {
-      case e: ConnectException => responseString = CONNECTION_REFUSED_MSG
-      case e: NoHttpResponseException => responseString = CONNECTION_TIMEOUT_MSG
-      case e: SocketTimeoutException => responseString = CONNECTION_TIMEOUT_MSG
-      case _: Throwable => responseString = CONNECTION_DEFAULT_ERROR_MSG
+      case e: ConnectException => {
+        responseString = CONNECTION_REFUSED_MSG
+      }
+      case e: NoHttpResponseException => {
+        responseString = CONNECTION_TIMEOUT_MSG
+      }
+      case e: SocketTimeoutException => {
+        responseString = CONNECTION_TIMEOUT_MSG
+      }
+      case _: Throwable => {
+        responseString = CONNECTION_DEFAULT_ERROR_MSG
+      }
     }
 
     return responseString
   }
 
-  def makeGetRequest(url: String): String = {
+  /**
+   * overloaded methods for makeGetRequest and makeDeleteRequest
+   */
+
+  def makeGetRequest(url: String, requestBody: Option[String]): String = {
     val getRequest = new HttpGet(url)
     val responseString = this.executeRequest(getRequest)
     return responseString
   }
 
-  def makeDeleteRequest(url: String): String = {
+  def makeDeleteRequest(url: String, requestBody: Option[String]): String = {
     val deleteRequest = new HttpDelete(url)
     val responseString = this.executeRequest(deleteRequest)
     return responseString
@@ -102,6 +107,27 @@ final object HttpRequestClient {
     patchRequest.setEntity(new StringEntity(requestBody))
     val responseString = this.executeRequest(patchRequest)
     return responseString
+  }
+
+  @Provides
+  def getRequestFunction(requestMethod: String): (url: String, requestBody: String) => String {
+    requestMethod match {
+      case "get": => {
+        return makeGetRequest
+      }
+      case "delete": => {
+        return makeDeleteRequest
+      }
+      case "post": => {
+        return makePostRequest
+      }
+      case "put": => {
+        return makePutRequest
+      }
+      case "patch" => {
+        return makePatchRequest
+      }
+    }
   }
 
 }

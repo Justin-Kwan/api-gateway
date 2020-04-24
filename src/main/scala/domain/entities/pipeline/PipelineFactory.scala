@@ -29,15 +29,26 @@ final class PipelineFactory {
 
     for(i <- 0 to middlewareCount) {
       val middlewareJson: JsonObject = middlewaresJson.get(i).getAsJsonObject()
-      var middleware: Middleware = gson.fromJson(middlewareJson.toString(), classOf[Middleware])
+
+      var middleware: Middleware = gson.fromJson(
+        middlewareJson.toString(),
+        classOf[Middleware]
+      )
+
+      requestFunction = getRequestFunction(middleware.getMethod())
+      middleware.setRequestFunction(requestFunction)
       pipeline.pipeService(middleware)
-      // inject request service
     }
 
     for(i <- 0 to serviceCount) {
       val serviceJson: JsonObject = servicesJson.get(i).getAsJsonObject()
-      var service: Service = gson.fromJson(serviceJson.toString(), classOf[Service])
-      // inject request service
+      var service: Service = gson.fromJson(
+        serviceJson.toString(),
+        classOf[Service]
+      )
+
+      requestFunction = getRequestFunction(service.getMethod())
+      middleware.setRequestFunction(requestFunction)
       pipeline.pipeService(service)
     }
 
