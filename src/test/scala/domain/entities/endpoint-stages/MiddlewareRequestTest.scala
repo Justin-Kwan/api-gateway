@@ -1,9 +1,9 @@
 import org.scalatest.FunSpec
 import org.scalatest.BeforeAndAfter
 
-import servicestages.Middleware
+import requeststages.MiddlewareRequest
 
-final class MiddlewareTest extends FunSpec with BeforeAndAfter {
+final class MiddlewareRequestTest extends FunSpec with BeforeAndAfter {
 
   final val EmptyMockString = ""
   final val ShortMockString = "rest"
@@ -27,26 +27,26 @@ final class MiddlewareTest extends FunSpec with BeforeAndAfter {
   mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
   bibendum sodales, augue velit cur123sus nunc,"""
 
-  var middleware: Middleware = _
+  var middlewareRequest: MiddlewareRequest = _
 
   before {
-    middleware = new Middleware()
+    middlewareRequest = new MiddlewareRequest()
   }
 
   describe("setSuccessResponse() / getSuccessResponse() tests") {
     it("should set and get the success condition (an empty string)") {
-      middleware.setSuccessResponse(EmptyMockString)
-      assert(middleware.getSuccessResponse() == EmptyMockString)
+      middlewareRequest.setSuccessResponse(EmptyMockString)
+      assert(middlewareRequest.getSuccessResponse() == EmptyMockString)
     }
 
     it("should set and get the success condition (a short string)") {
-      middleware.setSuccessResponse(ShortMockString)
-      assert(middleware.getSuccessResponse() == ShortMockString)
+      middlewareRequest.setSuccessResponse(ShortMockString)
+      assert(middlewareRequest.getSuccessResponse() == ShortMockString)
     }
 
     it("should set and get the success condition (a long string)") {
-      middleware.setSuccessResponse(LongMockString)
-      assert(middleware.getSuccessResponse() == LongMockString)
+      middlewareRequest.setSuccessResponse(LongMockString)
+      assert(middlewareRequest.getSuccessResponse() == LongMockString)
     }
   }
 

@@ -12,7 +12,7 @@ import com.github.tomakehurst.wiremock.core.WireMockConfiguration.wireMockConfig
 import networking.HttpRequestClient
 
 
-//@Ignore // this test suite takes a very long time
+@Ignore // this test suite takes a very long time
 final class HttpRequestClientTest extends FunSpec with BeforeAndAfterEach {
 
   final val MOCK_GET_RESPONSE1 = "{\"mockResponse: \": \"get\"}"

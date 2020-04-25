@@ -29,6 +29,8 @@ libraryDependencies += "com.lihaoyi" %% "cask" % "0.5.6"
 libraryDependencies += "org.scalactic" %% "scalactic" % "3.1.1"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.1.1" % "test"
 resolvers += "Artima Maven Repository" at "http://repo.artima.com/releases"
+// turn on stdout in testing
+logBuffered in Test := false
 // Json parsing
 // https://mvnrepository.com/artifact/org.json/json
 libraryDependencies += "org.json" % "json" % "20190722" jar()
@@ -40,6 +42,8 @@ libraryDependencies += "org.apache.httpcomponents" % "httpclient" % "4.5.12"
 // Server Mocking
 // https://mvnrepository.com/artifact/com.github.tomakehurst/wiremock-jre8
 libraryDependencies += "com.github.tomakehurst" % "wiremock" % "2.26.3" jar()
+// printing objects
+libraryDependencies += "com.lihaoyi" %% "pprint" % "0.5.6"
 
 
 

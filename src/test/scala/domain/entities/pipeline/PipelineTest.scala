@@ -5,8 +5,8 @@ import org.scalatest.BeforeAndAfter
 import org.scalatest.PrivateMethodTester
 import org.scalatest.Matchers
 
-import servicestages.Middleware
-import servicestages.Service
+import requeststages.MiddlewareRequest
+import requeststages.ServiceRequest
 import pipeline.Pipeline
 
 final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodTester with Matchers {
@@ -37,23 +37,23 @@ final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodT
     pipeline = new Pipeline()
   }
 
-  def getMockMiddleware(name: String, url: String, protocol: String, method: String, successResponse: String): Middleware = {
-    val mockMiddleware = new Middleware()
-    mockMiddleware.setName(name)
-    mockMiddleware.setUrl(url)
-    mockMiddleware.setProtocol(protocol)
-    mockMiddleware.setMethod(method)
-    mockMiddleware.setSuccessResponse(successResponse)
-    return mockMiddleware
+  def getMockMiddlewareRequest(name: String, url: String, protocol: String, method: String, successResponse: String): MiddlewareRequest = {
+    val mockMiddlewareRequest = new MiddlewareRequest()
+    mockMiddlewareRequest.setName(name)
+    mockMiddlewareRequest.setUrl(url)
+    mockMiddlewareRequest.setProtocol(protocol)
+    mockMiddlewareRequest.setMethod(method)
+    mockMiddlewareRequest.setSuccessResponse(successResponse)
+    return mockMiddlewareRequest
   }
 
-  def getMockService(name: String, url: String, protocol: String, method: String): Service = {
-    val mockService = new Service()
-    mockService.setName(name)
-    mockService.setUrl(url)
-    mockService.setProtocol(protocol)
-    mockService.setMethod(method)
-    return mockService
+  def getMockServiceRequest(name: String, url: String, protocol: String, method: String): ServiceRequest = {
+    val mockServiceRequest = new ServiceRequest()
+    mockServiceRequest.setName(name)
+    mockServiceRequest.setUrl(url)
+    mockServiceRequest.setProtocol(protocol)
+    mockServiceRequest.setMethod(method)
+    return mockServiceRequest
   }
 
   describe("constructor() test") {
@@ -63,17 +63,9 @@ final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodT
     }
   }
 
-  describe("setName() / getName() test") {
-    it("should set and get the name (a long string)") {
-      val setName = PrivateMethod[String]('setName)
-      pipeline invokePrivate setName(LongMockString)
-      assert(pipeline.getName() == LongMockString)
-    }
-  }
-
-  describe("pipeService() tests") {
-    it("should add 1 service, a mock middleware") {
-      val mockMiddleware1 = this.getMockMiddleware(
+  describe("pipeServiceRequest() tests") {
+    it("should add a mock middleware request") {
+      val mockMiddlewareRequest1 = this.getMockMiddlewareRequest(
         "mock middleware 1",
         "mockmiddlewareurl1.com",
         "mock middleware protocol 1",
@@ -81,26 +73,26 @@ final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodT
         "mock sucess condition 1"
       )
 
-      val mockServiceStages = Vector(mockMiddleware1)
-      pipeline.pipeService(mockMiddleware1)
-      pipeline.getServices() should be (mockServiceStages)
+      val mockServiceRequests = Vector(mockMiddlewareRequest1)
+      pipeline.pipeServiceRequest(mockMiddlewareRequest1)
+      pipeline.getServiceRequests() should be (mockServiceRequests)
     }
 
-    it("should add 1 service, a mock service") {
-      val mockService1 = this.getMockService(
+    it("should add a mock service request") {
+      val mockServiceRequest1 = this.getMockServiceRequest(
         "mock service 1",
         "mockserviceurl1.com",
         "mock service protocol 1",
         "mock service method 1"
       )
 
-      val mockServiceStages = Vector(mockService1)
-      pipeline.pipeService(mockService1)
-      pipeline.getServices() should be (mockServiceStages)
+      val mockServiceRequests = Vector(mockServiceRequest1)
+      pipeline.pipeServiceRequest(mockServiceRequest1)
+      pipeline.getServiceRequests() should be (mockServiceRequests)
     }
 
-    it("should add 2 services, a mock middleware and a mock service") {
-      val mockMiddleware1 = this.getMockMiddleware(
+    it("should add a mock middleware request and a mock service request") {
+      val mockMiddlewareRequest1 = this.getMockMiddlewareRequest(
         "mock middleware 1",
         "mockmiddlewareurl1.com",
         "mock middleware protocol 1",
@@ -108,28 +100,28 @@ final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodT
         "mock sucess condition 1"
       )
 
-      val mockService1 = this.getMockService(
+      val mockServiceRequest1 = this.getMockServiceRequest(
         "mock service 1",
         "mockserviceurl1.com",
         "mock service protocol 1",
         "mock service method 1"
       )
 
-      val mockServiceStages = Vector(mockMiddleware1, mockService1)
-      pipeline.pipeService(mockMiddleware1)
-      pipeline.pipeService(mockService1)
-      pipeline.getServices() should be (mockServiceStages)
+      val mockServiceRequests = Vector(mockMiddlewareRequest1, mockServiceRequest1)
+      pipeline.pipeServiceRequest(mockMiddlewareRequest1)
+      pipeline.pipeServiceRequest(mockServiceRequest1)
+      pipeline.getServiceRequests() should be (mockServiceRequests)
     }
   }
 
-  describe("getServices() tests") {
-    it("should get no services (empty)") {
-      val mockServiceStages = Vector()
-      pipeline.getServices() should be (mockServiceStages)
+  describe("getServiceRequests() tests") {
+    it("should get no service requests (empty)") {
+      val mockServiceRequests = Vector()
+      pipeline.getServiceRequests() should be (mockServiceRequests)
     }
 
-    it("should get 5 services in correct order") {
-      val mockMiddleware1 = this.getMockMiddleware(
+    it("should get 5 service requests in correct order") {
+      val mockMiddlewareRequest1 = this.getMockMiddlewareRequest(
         "mock middleware 1",
         "mockmiddlewareurl1.com",
         "mock middleware protocol 1",
@@ -137,7 +129,7 @@ final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodT
         "mock sucess condition 1"
       )
 
-      val mockMiddleware2 = this.getMockMiddleware(
+      val mockMiddlewareRequest2 = this.getMockMiddlewareRequest(
         "mock middleware 2",
         "mockmiddlewareurl2.com",
         "mock middleware protocol 2",
@@ -145,34 +137,34 @@ final class PipelineTest extends FunSpec with BeforeAndAfter with PrivateMethodT
         "mock sucess condition 2"
       )
 
-      val mockService1 = this.getMockService(
+      val mockServiceRequest1 = this.getMockServiceRequest(
         "mock service 1",
         "mockserviceurl1.com",
         "mock service protocol 1",
         "mock service method 1"
       )
 
-      val mockService2 = this.getMockService(
+      val mockServiceRequest2 = this.getMockServiceRequest(
         "mock service 2",
         "mockserviceurl2.com",
         "mock service protocol 2",
         "mock service method 2"
       )
 
-      val mockService3 = this.getMockService(
+      val mockServiceRequest3 = this.getMockServiceRequest(
         "mock service 3",
         "mockserviceurl3.com",
         "mock service protocol 3",
         "mock service method 3"
       )
 
-      val mockServiceStages = Vector(mockMiddleware1, mockService1, mockMiddleware2, mockService2, mockService3)
-      pipeline.pipeService(mockMiddleware1)
-      pipeline.pipeService(mockService1)
-      pipeline.pipeService(mockMiddleware2)
-      pipeline.pipeService(mockService2)
-      pipeline.pipeService(mockService3)
-      pipeline.getServices() should be (mockServiceStages)
+      val mockServiceRequests = Vector(mockMiddlewareRequest1, mockServiceRequest1, mockMiddlewareRequest2, mockServiceRequest2, mockServiceRequest3)
+      pipeline.pipeServiceRequest(mockMiddlewareRequest1)
+      pipeline.pipeServiceRequest(mockServiceRequest1)
+      pipeline.pipeServiceRequest(mockMiddlewareRequest2)
+      pipeline.pipeServiceRequest(mockServiceRequest2)
+      pipeline.pipeServiceRequest(mockServiceRequest3)
+      pipeline.getServiceRequests() should be (mockServiceRequests)
     }
   }
 

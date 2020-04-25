@@ -1,9 +1,9 @@
-package servicestages
+package requeststages
 
 import networking.HttpRequestClient
 
 // have empty var waiting for request body
-class Service {
+class ServiceRequest {
 
   protected var name:     String = _
   protected var url:      String = _
@@ -29,6 +29,14 @@ class Service {
     this.method = method
   }
 
+  def setBody(body: String): Unit = {
+    this.body = body
+  }
+
+  def setRequestFunc(requestFunction: (String, String) => String): Unit = {
+    this.requestFunction = requestFunction
+  }
+
   def getName(): String = {
     return this.name
   }
@@ -45,12 +53,8 @@ class Service {
     return this.method
   }
 
-  def setRequestBody(body: String): Unit = {
-    this.body = body
-  }
-
-  def setRequestFunc(requestFunction: (String, String) => String): Unit = {
-    this.requestFunction = requestFunction
+  def getBody(): String = {
+    return this.body
   }
 
   // test

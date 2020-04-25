@@ -1,1 +1,1 @@
-["PipelineTest","MiddlewareTest","HttpRequestClientTest","ServiceTest","JsonReaderTest"]
+["PipelineTest","PipelineFactoryTest","HttpRequestClientTest","ServiceRequestTest","JsonReaderTest","MiddlewareRequestTest"]

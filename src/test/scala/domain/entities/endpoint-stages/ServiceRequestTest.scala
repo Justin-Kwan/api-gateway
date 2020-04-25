@@ -1,9 +1,9 @@
 import org.scalatest.FunSpec
 import org.scalatest.BeforeAndAfter
 
-import servicestages.Service
+import requeststages.ServiceRequest
 
-final class ServiceTest extends FunSpec with BeforeAndAfter {
+final class ServiceRequestTest extends FunSpec with BeforeAndAfter {
 
   final val EmptyMockString = ""
   final val ShortMockString = "Short name"
@@ -27,77 +27,77 @@ final class ServiceTest extends FunSpec with BeforeAndAfter {
   mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget
   bibendum sodales, augue velit cur123sus nunc,"""
 
-  var service: Service = _
+  var serviceRequest: ServiceRequest = _
 
   before {
-    service = new Service()
+    serviceRequest = new ServiceRequest()
   }
 
   describe("setName() / getName() tests") {
     it("should set and get the name (an empty string)") {
-      service.setName(EmptyMockString)
-      assert(service.getName() == EmptyMockString)
+      serviceRequest.setName(EmptyMockString)
+      assert(serviceRequest.getName() == EmptyMockString)
     }
 
     it("should set and get the name (a short string)") {
-      service.setName(ShortMockString)
-      assert(service.getName() == ShortMockString)
+      serviceRequest.setName(ShortMockString)
+      assert(serviceRequest.getName() == ShortMockString)
     }
 
     it("should set and get the name (a long string)") {
-      service.setName(LongMockString)
-      assert(service.getName() == LongMockString)
+      serviceRequest.setName(LongMockString)
+      assert(serviceRequest.getName() == LongMockString)
     }
   }
 
   describe("setUrl() / getUrl() tests") {
     it("should set and get the url (an empty string)") {
-      service.setUrl(EmptyMockString)
-      assert(service.getUrl() == EmptyMockString)
+      serviceRequest.setUrl(EmptyMockString)
+      assert(serviceRequest.getUrl() == EmptyMockString)
     }
 
     it("should set and get the url (a short string)") {
-      service.setUrl(ShortMockString)
-      assert(service.getUrl() == ShortMockString)
+      serviceRequest.setUrl(ShortMockString)
+      assert(serviceRequest.getUrl() == ShortMockString)
     }
 
     it("should set and get the url (a long string)") {
-      service.setUrl(LongMockString)
-      assert(service.getUrl() == LongMockString)
+      serviceRequest.setUrl(LongMockString)
+      assert(serviceRequest.getUrl() == LongMockString)
     }
   }
 
   describe("setProtocol() / getProtocol() tests") {
     it("should set and get the protocol (an empty string)") {
-      service.setProtocol(EmptyMockString)
-      assert(service.getProtocol() == EmptyMockString)
+      serviceRequest.setProtocol(EmptyMockString)
+      assert(serviceRequest.getProtocol() == EmptyMockString)
     }
 
     it("should set and get the protocol (a short string)") {
-      service.setProtocol(ShortMockString)
-      assert(service.getProtocol() == ShortMockString)
+      serviceRequest.setProtocol(ShortMockString)
+      assert(serviceRequest.getProtocol() == ShortMockString)
     }
 
     it("should set and get the protocol (a long string)") {
-      service.setProtocol(LongMockString)
-      assert(service.getProtocol() == LongMockString)
+      serviceRequest.setProtocol(LongMockString)
+      assert(serviceRequest.getProtocol() == LongMockString)
     }
   }
 
   describe("setMethod() / getMethod() tests") {
     it("should set and get the method (an empty string)") {
-      service.setMethod(EmptyMockString)
-      assert(service.getMethod() == EmptyMockString)
+      serviceRequest.setMethod(EmptyMockString)
+      assert(serviceRequest.getMethod() == EmptyMockString)
     }
 
     it("should set and get the method (a short string)") {
-      service.setMethod(ShortMockString)
-      assert(service.getMethod() == ShortMockString)
+      serviceRequest.setMethod(ShortMockString)
+      assert(serviceRequest.getMethod() == ShortMockString)
     }
 
     it("should set and get the method (a long string)") {
-      service.setMethod(LongMockString)
-      assert(service.getMethod() == LongMockString)
+      serviceRequest.setMethod(LongMockString)
+      assert(serviceRequest.getMethod() == LongMockString)
     }
   }
 

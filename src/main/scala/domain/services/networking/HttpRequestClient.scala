@@ -127,7 +127,6 @@ final object HttpRequestClient {
     return responseString
   }
 
-  // test!!
   /**
    * Returns a predefined http request function based on the http
    * request method passed in.

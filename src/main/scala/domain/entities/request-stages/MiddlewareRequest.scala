@@ -1,8 +1,8 @@
-package servicestages
+package requeststages
 
-import servicestages.Service
+import requeststages.ServiceRequest
 
-final class Middleware extends Service {
+final class MiddlewareRequest extends ServiceRequest {
 
   private var successResponse: String = _
 
