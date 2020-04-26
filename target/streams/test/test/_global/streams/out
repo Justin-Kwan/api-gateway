@@ -1,20 +1,18 @@
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ServiceRequestTest, org.scalatest.tools.Framework$$anon$1@199540d2, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(HttpRequestClientTest, org.scalatest.tools.Framework$$anon$1@199540d2, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(JsonReaderTest, org.scalatest.tools.Framework$$anon$1@199540d2, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(PipelineFactoryTest, org.scalatest.tools.Framework$$anon$1@199540d2, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(PipelineTest, org.scalatest.tools.Framework$$anon$1@199540d2, false, [SuiteSelector])[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(MiddlewareRequestTest, org.scalatest.tools.Framework$$anon$1@199540d2, false, [SuiteSelector])[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 943 milliseconds.[0m[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(JsonReaderTest, org.scalatest.tools.Framework$$anon$1@27d70607, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(PipelineTest, org.scalatest.tools.Framework$$anon$1@27d70607, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(PipelineFactoryTest, org.scalatest.tools.Framework$$anon$1@27d70607, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(HttpRequestClientTest, org.scalatest.tools.Framework$$anon$1@27d70607, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(ServiceRequestTest, org.scalatest.tools.Framework$$anon$1@27d70607, false, [SuiteSelector])[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning TaskDef(MiddlewareRequestTest, org.scalatest.tools.Framework$$anon$1@27d70607, false, [SuiteSelector])[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mRun completed in 908 milliseconds.[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mTotal number of tests run: 26[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[36mSuites: completed 6, aborted 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 25, failed 1, canceled 0, ignored 25, pending 0[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m*** 1 TEST FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[36mTests: succeeded 26, failed 0, canceled 0, ignored 25, pending 0[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32mAll tests passed.[0m[0m
 [0m[[0m[0mdebug[0m] [0m[0mPassed tests:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	PipelineTest[0m
+[0m[[0m[0mdebug[0m] [0m[0m	PipelineFactoryTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	HttpRequestClientTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	ServiceRequestTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	JsonReaderTest[0m
 [0m[[0m[0mdebug[0m] [0m[0m	MiddlewareRequestTest[0m
-[0m[[0m[31merror[0m] [0m[0mFailed tests:[0m
-[0m[[0m[31merror[0m] [0m[0m	PipelineFactoryTest[0m
-[0m[[0m[31merror[0m] [0m[0m(Test / [31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

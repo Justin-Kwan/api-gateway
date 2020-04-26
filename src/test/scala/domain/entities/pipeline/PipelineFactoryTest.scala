@@ -5,8 +5,9 @@ import org.scalatest.FunSpec
 import org.scalatest.BeforeAndAfterEach
 import org.scalatest.PrivateMethodTester
 import org.scalatest.Matchers
-import com.google.gson.Gson
 
+import testutilities.ObjectMother
+import testutilities.ObjectMatcher
 import pipelinetests.MockPipelineJson
 
 import requeststages.MiddlewareRequest
@@ -16,7 +17,6 @@ import pipeline.PipelineFactory
 
 final class PipelineFactoryTest extends FunSpec with BeforeAndAfterEach with PrivateMethodTester with Matchers {
 
-  private val gson: Gson = new Gson()
   private val pipelineFactory: PipelineFactory = new PipelineFactory()
 
   describe("createPipelines() test") {
@@ -25,7 +25,7 @@ final class PipelineFactoryTest extends FunSpec with BeforeAndAfterEach with Pri
       assert(pipelines.isEmpty)
     }
 
-    it("should create a map of 1 pipeline with 1 middleware and 1 ServiceRequest") {
+    it("should create a map of 1 pipeline (holding 1 middleware and 1 ServiceRequest)") {
       val mockMiddlewareRequest1: MiddlewareRequest = ObjectMother.getMockMiddlewareRequest(
         "middleware1",
         "middleware1.com",
@@ -34,7 +34,7 @@ final class PipelineFactoryTest extends FunSpec with BeforeAndAfterEach with Pri
         "request body",
         "user authorized"
       )
-      val mockServiceRequest1: ServiceRequest = this.getMockServiceRequest(
+      val mockServiceRequest1: ServiceRequest = ObjectMother.getMockServiceRequest(
         "service1",
         "service1.com",
         "rest",
@@ -42,15 +42,13 @@ final class PipelineFactoryTest extends FunSpec with BeforeAndAfterEach with Pri
         "request body"
       )
       val mockServiceRequests = Vector(mockMiddlewareRequest1, mockServiceRequest1)
-      val mockPipeline: Pipeline = this.getMockPipeline("pipeline1", mockServiceRequests)
+      val mockPipeline: Pipeline = ObjectMother.getMockPipeline("pipeline1", mockServiceRequests)
 
       val mockPipelines = pipelineFactory.createPipelines(MockPipelineJson.mockPipelineJson2)
       val resPipeline: Pipeline = mockPipelines("pipeline1")
 
-      println("RESULT PIPELINE **: " + gson.toJson(resPipeline))
-      println("ORIG PIPELINE **: " + gson.toJson(mockPipeline))
+      assert(ObjectMatcher.areObjectsEqual(mockPipeline, resPipeline))
 
-      assert(resPipeline == mockPipeline)
       mockPipelines("pipeline1") shouldBe a [Pipeline]
       assert(mockPipelines.size == 1)
 

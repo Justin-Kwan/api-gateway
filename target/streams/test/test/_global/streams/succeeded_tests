@@ -1,18 +1,19 @@
 #Successful Tests
-#Sat Apr 25 17:14:43 EDT 2020
+#Sat Apr 25 20:42:33 EDT 2020
 endpointstagestest.EndpointTest=1587021800674
 JsonReaderTests.JsonHandlerTest=1586938806130
 PolicyTest=1587613976333
 jsonreadertests.JsonReaderTest=1587021800666
-JsonReaderTest=1587849282872
+JsonReaderTest=1587861752708
 policytest.PolicyTest=1587022841729
 jsonreadertest.JsonReaderTest=1587022841729
 EndpointTest=1587613976353
-HttpRequestClientTest=1587849283346
-ServiceRequestTest=1587849282891
+HttpRequestClientTest=1587861753297
+ServiceRequestTest=1587861752729
 JsonReaderTests.JsonReaderTest=1586939288587
 MiddlewareTest=1587793263735
 endpointtest.EndpointTest=1587022841741
+PipelineFactoryTest=1587861752897
 ServiceTest=1587793263756
-MiddlewareRequestTest=1587849282872
-PipelineTest=1587849283001
+MiddlewareRequestTest=1587861752708
+PipelineTest=1587861752920

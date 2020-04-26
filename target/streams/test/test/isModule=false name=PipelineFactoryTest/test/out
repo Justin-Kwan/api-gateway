@@ -2,4 +2,4 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mcreatePipelines() test[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should create a map of 0 pipelines[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[31m- should create a map of 1 pipeline with 1 middleware and 1 ServiceRequest *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  pipeline.Pipeline@473d8128 did not equal pipeline.Pipeline@4416930 (PipelineFactoryTest.scala:82)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  testutilities.ObjectMatcher.arePipelinesEqual(mockPipeline, resPipeline) was false (PipelineFactoryTest.scala:50)[0m[0m

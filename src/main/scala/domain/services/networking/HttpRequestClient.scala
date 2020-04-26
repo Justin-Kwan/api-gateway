@@ -17,6 +17,7 @@ import org.apache.http.client.methods.HttpPatch
 import org.apache.http.client.methods.HttpDelete
 import org.apache.http.NoHttpResponseException
 
+import exceptions.InvalidHttpMethodException
 
 final object HttpRequestClient {
 
@@ -131,9 +132,13 @@ final object HttpRequestClient {
    * Returns a predefined http request function based on the http
    * request method passed in.
    *
+   * preconditions: requestMethod must be "get", "delete", "post",
+   *                "put" or "patch"
+   *
    * @param {String} Request method to retrieve
    * @return {(String, String) => String} Http request function
    */
+  @throws(classOf[InvalidHttpMethodException])
   def getRequestFunc(requestMethod: String): (String, String) => String = {
     requestMethod match {
       case "get" => {
@@ -151,6 +156,7 @@ final object HttpRequestClient {
       case "patch" => {
         return makePatchRequest
       }
+      case _ => throw new InvalidHttpMethodException()
     }
   }
 
