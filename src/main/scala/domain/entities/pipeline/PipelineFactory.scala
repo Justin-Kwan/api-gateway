@@ -28,7 +28,7 @@ final class PipelineFactory {
 
     val pipeline: Pipeline = new Pipeline(pipelineName)
 
-    for(i <- 0 to middlewareRequestCount - 1) {
+    for(i <- 0 until middlewareRequestCount) {
       val middlewareRequestJson: JsonObject = middlewareRequestsJson.get(i).getAsJsonObject()
 
       var middlewareRequest: MiddlewareRequest = gson.fromJson(
@@ -41,7 +41,7 @@ final class PipelineFactory {
       pipeline.pipeServiceRequest(middlewareRequest)
     }
 
-    for(i <- 0 to serviceRequestCount - 1) {
+    for(i <- 0 until serviceRequestCount) {
       val serviceRequestJson: JsonObject = serviceRequestsJson.get(i).getAsJsonObject()
       var serviceRequest: ServiceRequest = gson.fromJson(
         serviceRequestJson.toString(),
@@ -64,12 +64,12 @@ final class PipelineFactory {
 
     var pipelines = mutable.Map[String, Pipeline]()
 
-    for(i <- 0 to pipelineCount - 1) {
+    for(i <- 0 until pipelineCount) {
       val pipelineJson: JsonObject = pipelinesJson.get(i).getAsJsonObject()
       val pipeline: Pipeline = this.getPipeline(pipelineJson)
       pipelines += (pipeline.getName() -> pipeline)
 		}
-
+    
     return pipelines
   }
 

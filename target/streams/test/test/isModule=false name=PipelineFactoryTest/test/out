@@ -1,5 +1,10 @@
 [0m[[0m[0minfo[0m] [0m[0m[32mPipelineFactoryTest:[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32mcreatePipelines() test[0m[0m
 [0m[[0m[0minfo[0m] [0m[0m[32m- should create a map of 0 pipelines[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m- should create a map of 1 pipeline with 1 middleware and 1 ServiceRequest *** FAILED ***[0m[0m
-[0m[[0m[0minfo[0m] [0m[0m[31m  testutilities.ObjectMatcher.arePipelinesEqual(mockPipeline, resPipeline) was false (PipelineFactoryTest.scala:50)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a map of 1 pipeline (holding 0 middleware requests and 0 service requests)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a map of 1 pipeline (holding 1 middleware requests and 1 service requests)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a map of 1 pipeline (holding 1 service request)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a map of 1 pipeline (holding 1 middleware request)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[32m- should create a map of 1 pipeline (holding 2 middleware requests and 3 service requests)[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m- should create a map of 3 pipelines (pipeline 1 with 2 middleware requests and 3 service requests, pipeline 2 with 4 middleware requests and 3 service requests, and pipeline 3 with 4 middleware requests and 5 service requests) *** FAILED ***[0m[0m
+[0m[[0m[0minfo[0m] [0m[0m[31m  HashMap("pipeline2 with many services" -> pipeline.Pipeline@221eb9fa, "pipeline3 with many services" -> pipeline.Pipeline@7f3dd6d3, "pipeline1 with many services" -> pipeline.Pipeline@4d138261) had size 3 instead of expected size 2 (PipelineFactoryTest.scala:480)[0m[0m

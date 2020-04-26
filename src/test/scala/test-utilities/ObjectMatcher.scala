@@ -14,7 +14,7 @@ final object ObjectMatcher {
   private val gson: Gson = new Gson()
 
   def areObjectsEqual(object1: Any, object2: Any): Boolean = {
-    if(gson.toJson(object1) == gson.toJson(object1)) {
+    if(gson.toJson(object1) == gson.toJson(object2)) {
       return true
     }
     else {
