@@ -25,6 +25,10 @@ final class Pipeline {
     this.serviceRequests = this.serviceRequests :+ serviceRequest
   }
 
+  def pipeServiceRequests(serviceRequests: Vector[ServiceRequest]): Unit = {
+    this.serviceRequests = serviceRequests
+  }
+
   def getName(): String = {
     return this.name
   }

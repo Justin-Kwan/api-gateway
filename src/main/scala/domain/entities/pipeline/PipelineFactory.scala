@@ -3,11 +3,12 @@ package pipeline
 import scala.collection.mutable
 
 import com.google.gson.Gson
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.JsonArray
+import com.google.gson.JsonElement
+import com.google.gson.JsonObject
+import com.google.gson.JsonParser
 
+import sharedutilities.JsonObjectMapper
 import pipeline.Pipeline
 import requeststages.MiddlewareRequest
 import requeststages.ServiceRequest
@@ -17,41 +18,36 @@ import networking.HttpRequestClient
 final class PipelineFactory {
 
   private val gson: Gson = new Gson()
-  private val parser: JsonParser = new JsonParser();
+  private val parser: JsonParser = new JsonParser()
+
+
+  def injectRequestFunc(pipeline: Pipeline, serviceRequests: Vector[ServiceRequest]): Pipeline = {
+
+    for(i <- 0 until serviceRequests.length) {
+      val requestFunc: (String, String) => String =
+        HttpRequestClient.getRequestFunc(serviceRequests(i).getMethod())
+      serviceRequests(i).setRequestFunc(requestFunc)
+    }
+
+    pipeline.pipeServiceRequests(serviceRequests)
+    return pipeline
+  }
 
   private def getPipeline(pipelineJson: JsonObject): Pipeline = {
-    val pipelineName: String       = pipelineJson.get("name").getAsString();
+    val pipelineName: String              = pipelineJson.get("name").getAsString();
     val middlewareRequestsJson: JsonArray = pipelineJson.getAsJsonArray("middleware requests")
     val serviceRequestsJson: JsonArray    = pipelineJson.getAsJsonArray("service requests")
     val middlewareRequestCount: Int       = middlewareRequestsJson.size()
-    val serviceRequestCount: Int          = serviceRequestsJson.size()
 
-    val pipeline: Pipeline = new Pipeline(pipelineName)
+    var pipeline: Pipeline = new Pipeline(pipelineName)
 
-    for(i <- 0 until middlewareRequestCount) {
-      val middlewareRequestJson: JsonObject = middlewareRequestsJson.get(i).getAsJsonObject()
+    val middlewareRequests: Vector[MiddlewareRequest] = JsonObjectMapper.mapServiceRequests(middlewareRequestsJson)
+    val serviceRequests: Vector[ServiceRequest] = JsonObjectMapper.mapServiceRequests(serviceRequestsJson)
 
-      var middlewareRequest: MiddlewareRequest = gson.fromJson(
-        middlewareRequestJson.toString(),
-        classOf[MiddlewareRequest]
-      )
+    val srs: Vector [ServiceRequest] = middlewareRequests ++ serviceRequests
 
-      val requestFunc: (String, String) => String = HttpRequestClient.getRequestFunc(middlewareRequest.getMethod())
-      middlewareRequest.setRequestFunc(requestFunc)
-      pipeline.pipeServiceRequest(middlewareRequest)
-    }
 
-    for(i <- 0 until serviceRequestCount) {
-      val serviceRequestJson: JsonObject = serviceRequestsJson.get(i).getAsJsonObject()
-      var serviceRequest: ServiceRequest = gson.fromJson(
-        serviceRequestJson.toString(),
-        classOf[ServiceRequest]
-      )
-
-      val requestFunc: (String, String) => String = HttpRequestClient.getRequestFunc(serviceRequest.getMethod())
-      serviceRequest.setRequestFunc(requestFunc)
-      pipeline.pipeServiceRequest(serviceRequest)
-    }
+    pipeline = injectRequestFunc(pipeline, srs)
 
     return pipeline
   }
@@ -69,7 +65,7 @@ final class PipelineFactory {
       val pipeline: Pipeline = this.getPipeline(pipelineJson)
       pipelines += (pipeline.getName() -> pipeline)
 		}
-    
+
     return pipelines
   }
 
